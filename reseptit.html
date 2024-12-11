@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reseptisivusto</title>
+    <title>Reseptit</title>
     <link rel="stylesheet" href="style.css">
+</head>
 <body>
     <header>
-        <h1>Reseptisivusto</h1> 
+        <h1>Reseptit</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Etusivu</a></li>
@@ -19,21 +20,16 @@
         </nav>
     </header>
     <main>
-        <nav class="breadcrumb">
-            <ul>
-                <li><a href="index.html">Etusivu</a></li>
-                <li><span>></span></li> 
-                <li><a href="reseptit.html">Reseptit</a></li>
-                <li><span>></span></li>
-                <li>Tervetuloa</li>
-            </ul>
-        </nav>
+        <h2>Hae reseptejä</h2>
+        <input type="text" id="search" placeholder="Hae reseptejä...">
+        <button onclick="searchRecipes()">Hae</button>
 
-        <h2>Tervetuloa reseptisivustolle!</h2> 
-        <p>Hae reseptejä ja löydä uusia ideoita keittiöön.</p> 
-        <img src="/tomato.jpg" alt="Reseptit" style="width: 100%; height: auto;"> 
-
+        <div id="recipeList">
+            <!-- Reseptien lista tulee tänne -->
+        </div>
     </main>
-</body>
-</html>
 
+    <script src="script.js"></script>
+</body>
+<img src="/tomato.jpg" alt="Reseptit" style="width: 100%; height: auto;">
+</html>
